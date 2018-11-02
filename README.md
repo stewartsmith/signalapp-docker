@@ -1,8 +1,10 @@
 Signal Desktop in Docker
 ------------------------
 
+On Fedora, by default, you can only run docker as root. Other distros may differ.
+
 ```console
-$ docker build -t signalapp .
+$ sudo docker build -t signalapp .
 $ sudo semodule -X 300 -i my-signaldesktop.pp
 $ ./run.sh
 ```
