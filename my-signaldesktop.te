@@ -1,0 +1,11 @@
+
+module my-signaldesktop 1.0;
+
+require {
+	type unconfined_t;
+	type container_t;
+	class unix_stream_socket connectto;
+}
+
+#============= container_t ==============
+allow container_t unconfined_t:unix_stream_socket connectto;
