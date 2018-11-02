@@ -1,9 +1,11 @@
 Signal Desktop in Docker
 ------------------------
 
+```console
 $ docker build -t signalapp .
 $ sudo semodule -X 300 -i my-signaldesktop.pp
 $ ./run.sh
+```
 
 Should pass through X11 and Wayland okay. Seems to use X.
 
